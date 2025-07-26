@@ -111,3 +111,8 @@ window.onload = () => {
 (function() {
   emailjs.init("-loHbdHw0Erg9Gq_t");
 })();
+
+fetch("https://medireminder-backend.onrender.com/api/reminders")
+  .then(response => response.json())
+  .then(data => console.log(data));
+
