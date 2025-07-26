@@ -1,3 +1,4 @@
+
 let reminders = [];
 
 // Function to add a reminder
@@ -115,4 +116,6 @@ window.onload = () => {
 fetch("https://medireminder-backend.onrender.com/api/reminders")
   .then(response => response.json())
   .then(data => console.log(data));
+
+const API_BASE_URL= 'https://your-backend-url.onrender.com';
 
